@@ -1,0 +1,58 @@
+.circul {
+    border-radius: 20px;
+    background-color: #C2C8C5;
+    color: black;
+    width: 250px;
+    height: 40px;
+    display: block;
+}
+
+.circul i {
+    margin-top: 1%;
+    /*font-size: 25px;*/
+    margin: 4% 0% 3% 8%;
+
+}
+
+body{
+    background-color: #F2F6F8;
+}
+
+.negro{
+    color: black;
+}
+
+.centradoNombre {
+    margin: 20%;
+}
+
+.centradoInfo {
+    margin: 20% 0% 20% 0%;
+}
+
+
+.Info {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* pantalla pequeña*/
+@media (max-width: 260px) {
+    .Info {
+        margin: 50% 15% 0% 15%;
+    }
+}
+
+/*mediana*/
+@media (min-width: 400px) and (max-width: 1000px) {
+    .Info {
+        margin: 25% 15% 0px 15%;
+    }
+}
