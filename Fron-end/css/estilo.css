@@ -1,22 +1,9 @@
-.circul {
-    border-radius: 20px;
-    background-color: #C2C8C5;
-    color: black;
-    width: 250px;
-    height: 40px;
-    display: block;
-}
-
-
-.circul i {
-    margin-top: 1%;
-    /*font-size: 25px;*/
-    margin: 4% 0% 4% 8%;
-    text-align: center;
-
-}
 
 body {
+    background-color: #F2F6F8;
+}
+
+.body {
     background-color: #F2F6F8;
 }
 
