@@ -24,7 +24,7 @@
                 <div class="col-4 pt-1">
                     <img src="/img/MV.png" width="20%" height="20%">
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center " >
+                <div class="col-6 d-flex justify-content-end align-items-center ">
                     <div class="circul ">
                         <a href="#">
                             <i class="fa-regular fa-user negro">
@@ -35,21 +35,25 @@
                 </div>
             </div>
         </header>
-        
+
         <!-- Navegacion -->
 
-        <div class="nav-scroller py-1 mb-3 border-bottom" >
+        <div class="nav-scroller py-1 mb-3 border-bottom">
             <nav class="nav nav-underline justify-content-between">
                 <!-- <a class="nav-item nav-link link-body-emphasis active" href="#">Paquetes <i class="fa-solid fa-box"></i></a> -->
-                <a class="nav-item nav-link link-body-emphasis" href="#">Paquetes <i class="fa-solid fa-box"></i></a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Paquetes <i
+                        class="fas fa-suitcase-rolling"></i></a>
                 <a class="nav-item nav-link link-body-emphasis" href="#">Ofertas <i class="fa-solid fa-tags"></i></a>
-                <a class="nav-item nav-link link-body-emphasis" href="#">Crea tu viaje <i class="fa-solid fa-plane-departure"></i></a>
-                <a class="nav-item nav-link link-body-emphasis" href="#">Información <i class="fa-solid fa-circle-question"></i></a>
+                <a class="nav-item nav-link link-body-emphasis" href="#">Crea tu viaje <i
+                        class="fa-solid fa-plane-departure"></i></a>
+                <a class="nav-item nav-link link-body-emphasis" href="#footer">Información <i
+                        class="fa-solid fa-circle-question"></i></a>
             </nav>
         </div>
 
         <!-- Carrusel -->
-        <div id="carouselExampleCaptions" class="carousel slide">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/img/Piscilago.png" width="100%" height="auto">
@@ -62,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img src="/img/Piscilago.png" width="100%" height="auto">
                     <div class="carousel-caption d-none d-md-block">
                         <div class="centradoNombre">
@@ -73,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img src="/img/Piscilago.png" width="100%" height="auto">
                     <div class="carousel-caption d-none d-md-block">
                         <div class="centradoNombre">
@@ -84,46 +88,126 @@
                         </div>
                     </div>
                 </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
-        <!-- Informacion -->
+
+        <!-- Datos -->
         <div>
-            <div>
-                <img src="/img/fondoDelLogo.png" width="100%" height="auto">
-                <div class="Info  d-md-block">
-                    <div class="negro">
-                        <div class="row centradoInfo justify-content-between">
-                            <div class="col-lg-3 border">
-                              <h3 class="fw-normal"><b>Porque comprar con nosotros</b></h3>
-                              <p>Nuestros paquetes ofrecen una experiencia integral que incluye transporte seguro, itinerarios bien planificados y atención personalizada, asegurando que tu aventura sea memorable y libre de preocupaciones.</p>
-                            </div>
-                            <div class="col-lg-3 border" >
-                              <h3 class="fw-normal"><b>¿Que paquetes consigues?</b></h3>
-                              <br>
-                              <p>Elige entre una variedad de emocionantes paquetes turísticos que cubren todo Colombia. Desde playas hasta montañas y ciudades, tenemos la opción perfecta para tu próxima aventura en nuestro hermoso país.</p>
-                            </div>
-                            <div class="col-lg-3 border">
-                              <h3 class="fw-normal"><b>Que tener en cuenta</b></h3>
-                              <br>
-                              <p>Al elegir un paquete ten en cuenta nuestra variedad de destinos, calidad de servicios y atención personalizada. Busca el paquete que se adapte a tus intereses y presupuesto para una experiencia de viaje sin preocupaciones.</p>
-                            </div>
-                          </div>
+            <div class="negro">
+                <div class="row centradoInfo-sm justify-content-between">
+                    <div class="col-12">
+                        <h3 class="fw-normal alinearDato"><b>¿Porque reservar con Mundo Viajero?</b></h3>
+                    </div>
+                    <div class="col-lg-3 fondoDato">
+                        <h5 class="fw-normal alinearDato"><b>¿Porqué comprar con nosotros?</b></h5>
+                        <i class="fas fa-lock tamañoIcono"></i>
+                        <p>Nuestros paquetes ofrecen una experiencia integral que incluye transporte seguro,
+                            itinerarios bien planificados y atención personalizada, asegurando que tu aventura
+                            sea memorable y libre de preocupaciones.</p>
+                    </div>
+                    <div class="col-lg-3 fondoDato">
+                        <h5 class="fw-normal alinearDato"><b>¿Que paquetes consigues?</b></h5>
+                        <i class="fas fa-suitcase-rolling tamañoIcono"></i>
+                        <p>Elige entre una variedad de emocionantes paquetes turísticos que cubren todo
+                            Colombia. Desde playas hasta montañas y ciudades, tenemos la opción perfecta para tu
+                            próxima aventura en nuestro hermoso país.</p>
+                    </div>
+                    <div class="col-lg-3 fondoDato ">
+                        <h5 class="fw-normal alinearDato"><b>Que tener en cuenta</b></h5>
+                        <i class="fas fa-question tamañoIcono"></i>
+                        <p>Al elegir un paquete ten en cuenta nuestra variedad de destinos, calidad de servicios
+                            y atención personalizada. Busca el paquete que se adapte a tus intereses y
+                            presupuesto para una experiencia de viaje sin preocupaciones.</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+
+    <!-- Reseñas -->
+    <div class="container">
+        <div class="reseñas mt-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">"Excelente experiencia con Mundo Viajero. Los paquetes turísticos
+                                    son muy completos y el servicio al cliente es excepcional. ¡Definitivamente
+                                    recomiendo sus servicios!"</p>
+                                <p class="card-text fw-bold">- Juan Pérez</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">"Mundo Viajero me ayudó a organizar unas vacaciones increíbles. Los
+                                    guías turísticos son muy amables y conocen muy bien los destinos. ¡Volveré a viajar
+                                    con ellos!"</p>
+                                <p class="card-text fw-bold">- María Gómez</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega más reseñas aquí -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- informacion empresa -->
+
+    <footer class="footer bg-dark bg-gradient text-white mt-auto py-3" style="height: 350px;" id="footer">
+        <div class="container">
+            <div class="row" style="padding-top: 100px;">
+                <div class="col-4">
+                    <div class="ml-3">
+                        <!-- Aquí va el logo -->
+                        <img src="/img/MV.png" width="200" height="150">
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="cuadroIconos">
+                        <!-- Aquí van los enlaces a las redes sociales -->
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-times"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 
