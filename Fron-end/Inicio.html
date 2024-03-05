@@ -26,31 +26,24 @@
                 </div>
                 <div class="col-6 d-flex justify-content-end align-items-center ">
                     <div class="btn-group ">
-                        <button type="button" class="btn btn-lg btn-secondary fondoDato"><i class="fa-regular fa-user"
-                                style="font-size: 30px;"></i></button>
+                        <button type="button" class="btn btn-lg btn-secondary fondoDato" data-bs-toggle="modal"
+                            data-bs-target="#modalInicio">
+                            <i class="fa-regular fa-user" style="font-size: 30px;"></i>
+                        </button>
                         <button type="button"
                             class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split fondoDato"
                             data-bs-toggle="dropdown" aria-expanded="false"></button>
                         <ul class="dropdown-menu body">
-                            <li><a class="dropdown-item " href="#">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item " fondoDato" data-bs-toggle="modal"
+                                    data-bs-target="#modalInicio">Iniciar sesión</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="btn-group ">
-                        <button type="button" class="btn btn-lg btn-secondary fondoDato"><i class="fa-regular fa-user"
-                                style="font-size: 30px;"></i></button>
-                        <button type="button"
-                            class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split fondoDato"
-                            data-bs-toggle="dropdown" aria-expanded="false"></button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
+
+
+
+
         </header>
 
         <!-- Navegacion -->
@@ -126,24 +119,27 @@
                     <div class="col-12">
                         <h3 class="fw-normal alinearDato"><b>¿Porque reservar con Mundo Viajero?</b></h3>
                     </div>
-                    <div class="col-lg-3 fondoDato">
-                        <h5 class="fw-normal alinearDato"><b>¿Porqué comprar con nosotros?</b></h5>
-                        <i class="fas fa-lock tamañoIcono"></i>
-                        <p>Nuestros paquetes ofrecen una experiencia integral que incluye transporte seguro,
+                    <div class="col-lg-3 fondoDatoTarjeta">
+                        <h5 class="fw-normal alinearDato"><b>Comprar con nosotros</b></h5>
+                        <i class="fas fa-lock  tamañoIcono"></i>
+                        <p class="centrarTexto ">Nuestros paquetes ofrecen una experiencia integral que incluye
+                            transporte seguro,
                             itinerarios bien planificados y atención personalizada, asegurando que tu aventura
                             sea memorable y libre de preocupaciones.</p>
                     </div>
-                    <div class="col-lg-3 fondoDato">
+                    <div class="col-lg-3 fondoDatoTarjeta">
                         <h5 class="fw-normal alinearDato"><b>¿Que paquetes consigues?</b></h5>
                         <i class="fas fa-suitcase-rolling tamañoIcono"></i>
-                        <p>Elige entre una variedad de emocionantes paquetes turísticos que cubren todo
+                        <p class="centrarTexto ">Elige entre una variedad de emocionantes paquetes turísticos que cubren
+                            todo
                             Colombia. Desde playas hasta montañas y ciudades, tenemos la opción perfecta para tu
                             próxima aventura en nuestro hermoso país.</p>
                     </div>
-                    <div class="col-lg-3 fondoDato ">
+                    <div class="col-lg-3 fondoDatoTarjeta ">
                         <h5 class="fw-normal alinearDato"><b>Que tener en cuenta</b></h5>
                         <i class="fas fa-question tamañoIcono"></i>
-                        <p>Al elegir un paquete ten en cuenta nuestra variedad de destinos, calidad de servicios
+                        <p class="centrarTexto ">Al elegir un paquete ten en cuenta nuestra variedad de destinos,
+                            calidad de servicios
                             y atención personalizada. Busca el paquete que se adapte a tus intereses y
                             presupuesto para una experiencia de viaje sin preocupaciones.</p>
                     </div>
@@ -279,6 +275,10 @@
                 </div>
             </div>
         </div>
+
+        <br>
+        <br>
+        <br>
     </div>
 
 
@@ -317,6 +317,44 @@
     </footer>
 
 
+    <!-- Modal -->
+    <!-- Modal Inicio de sesion -->
+    <div class="modal fade" id="modalInicio" tabindex="-1" aria-labelledby="modalInicioLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="" alt="">
+                    <h5 class="modal-title" id="modalInicioLabel">Iniciar sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de inicio de sesión -->
+                    <form>
+                        <!-- Campo de nombre de usuario -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nombre de usuario</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                        </div>
+                        <!-- Campo de contraseña -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
