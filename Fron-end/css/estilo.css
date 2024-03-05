@@ -7,7 +7,11 @@ body {
     background-color: #F2F6F8;
 }
 
-
+.link-body-emphasis:hover .link-text,
+.link-body-emphasis:hover i {
+    transform: scale(1.4); /* Puedes ajustar el valor según lo deseado */
+    transition: transform 1s ease; /* Agrega una transición suave */
+}
 
 .negro {
     color: black;
