@@ -8,8 +8,10 @@ body {
 
 .link-body-emphasis:hover .link-text,
 .link-body-emphasis:hover i {
-    transform: scale(1.4); /* Puedes ajustar el valor según lo deseado */
-    transition: transform 1s ease; /* Agrega una transición suave */
+    transform: scale(1.4);
+    /* Puedes ajustar el valor según lo deseado */
+    transition: transform 1s ease;
+    /* Agrega una transición suave */
 }
 
 .negro {
@@ -31,7 +33,7 @@ body {
 
 
 .card {
-    height: 250px; 
+    height: 250px;
     width: auto;
 }
 
@@ -94,20 +96,20 @@ body {
 }
 
 .fondoDatoTarjeta {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     height: 100%;
 }
 
 .fondoDatoTarjeta:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .centrarTexto {
-    text-align: center; 
+    text-align: center;
 }
 
 .fondoDato {
@@ -115,8 +117,8 @@ body {
 }
 
 .fondoDato {
-    border: 2px solid rgb(179, 179, 179); 
-    transition: background-color 1s ease 
+    border: 2px solid rgb(179, 179, 179);
+    transition: background-color 1s ease
 }
 
 .fondoDato:hover {
@@ -129,6 +131,14 @@ body {
     margin: auto;
 }
 
+ul {
+    text-align: left;
+}
+
+.container-fluid {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -141,7 +151,7 @@ body {
 .modal-footer {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .modal-header {
@@ -151,10 +161,10 @@ body {
     flex-direction: column;
 }
 
-.centrarTextoModal{
-text-align: center;
+.centrarTextoModal {
+    text-align: center;
 }
 
-.centrarCuadroCheck{
+.centrarCuadroCheck {
     padding-left: 24%;
 }
