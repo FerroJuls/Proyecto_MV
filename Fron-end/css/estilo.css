@@ -150,3 +150,11 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.centrarTextoModal{
+text-align: center;
+}
+
+.centrarCuadroCheck{
+    padding-left: 24%;
+}
