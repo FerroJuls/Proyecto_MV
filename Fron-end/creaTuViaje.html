@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea</title>
+    <title>Crea tu viaje</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -12,34 +12,162 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/Fron-end/css/estilo.css">
+        <link rel="stylesheet" href="/Fron-end/css/creaTuViaje.css">
 </head>
 <body>
     <div class="container">
         <header class="border-bottom lh-1 py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
-                    <img src="/img/MV.png" width="20%" height="20%">
-                </div>
-                <div class="col-6 d-flex justify-content-end align-items-center ">
-                    <div class="btn-group ">
-                        <button type="button" class="btn btn-lg btn-secondary fondoDato" data-bs-toggle="modal"
-                            data-bs-target="#modalInicio">
-                            <i class="fa-regular fa-user" style="font-size: 30px;"></i>
-                        </button>
-                        <button type="button"
-                            class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split fondoDato"
-                            data-bs-toggle="dropdown" aria-expanded="false"></button>
-                        <ul class="dropdown-menu body">
-                            <li><a class="dropdown-item fondoDato" data-bs-toggle="modal" data-bs-target="#modalInicio">Iniciar sesión</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+              <img src="/img/MV.png" width="20%" height="20%" />
             </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-secondary fondoDato"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalInicio"
+                >
+                  <i class="fa-regular fa-user" style="font-size: 30px"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split fondoDato"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></button>
+                <ul class="dropdown-menu body">
+                  <li>
+                    <a
+                      class="dropdown-item fondoDato"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalInicio"
+                      >Iniciar sesión</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+   <!-- Navegacion -->
 
-
-
-
-    
+   <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+      <!-- <a class="nav-item nav-link link-body-emphasis active" href="#">Paquetes <i class="fa-solid fa-box"></i></a> -->
+      <a class="nav-item nav-link link-body-emphasis" href="#"
+        >Paquetes <i class="fas fa-suitcase-rolling"></i
+      ></a>
+      <a class="nav-item nav-link link-body-emphasis" href="#"
+        >Ofertas <i class="fa-solid fa-tags"></i
+      ></a>
+      <a class="nav-item nav-link link-body-emphasis" href="#"
+        >Crea tu viaje <i class="fa-solid fa-plane-departure"></i
+      ></a>
+      <a class="nav-item nav-link link-body-emphasis" href="#footer"
+        >Información <i class="fa-solid fa-circle-question"></i
+      ></a>
+    </nav>
+  </div>
+  <div class="highlight">
+    <div class="highlight-body">
+      <h5 class="highlight-title">¡Bienvenidos a nuestro viajes!</h5>
+      <p class="highlight-text">En Mundo Viajero, nos especializamos en crear experiencias inolvidables para
+        grupos de personas, ya sea para viajes de grado u otras celebraciones. Sin
+        embargo, para garantizar la mejor experiencia posible, contamos con ciertas
+        condiciones que queremos compartir contigo.
+        Para poder organizar un viaje con nosotros, es necesario que el grupo tenga un
+        mínimo de 30 personas y un máximo de 40. Este rango nos permite ofrecer un
+        servicio personalizado y adaptado a las necesidades del grupo.
+        Además, es importante tener en cuenta que requerimos un tiempo mínimo de
+        anticipación para la planificación. Pedimos a nuestros clientes que nos contacten al
+        menos con 3 meses de anticipación a la fecha deseada para viajar. Esto nos
+        permite asegurar disponibilidad y ofrecer las mejores opciones de itinerario y
+        alojamiento.
+        Una vez que hayas completado nuestro formulario de solicitud de viaje, nuestro
+        equipo se encargará de revisarlo detenidamente. Te informaremos si podemos
+        llevar a cabo el viaje solicitado y te proporcionaremos una cotización. Por este
+        servicio de cotización, aplicamos un cargo de 50.000 que cubre el tiempo y
+        esfuerzo dedicados a planificar tu viaje de manera personalizada.
+        Después de confirmar y cotizar tu paquete de viaje, procederemos a cobrar el 50%
+        del monto total acordado para iniciar las reservaciones y demás preparativos
+        necesarios y el otro 50% se recaudará en un mes antes de la fecha de salida, si no
+        se cancela este monto con el tiempo estimado se cancelara el paquete de viaje.
+        Es importante tener en cuenta que en caso de cancelación por parte del cliente, no
+        se realizará la devolución del dinero depositado. Esto se debe a los compromisos
+        adquiridos con proveedores y servicios contratados para tu viaje.
+        Nuestro objetivo es brindarte una experiencia única y sin preocupaciones.
+        ¡Estamos emocionados de trabajar contigo para hacer realidad tu viaje de ensueño!
+        Para comenzar, completa nuestro formulario de solicitud en nuestra página web y
+        estaremos en contacto contigo para comenzar esta emocionante aventura juntos.
+        ¡Gracias por elegir!
+        </p>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+        data-bs-target="#modalCreaTuviaje" >crear</button>        
+       
+        <div class="modal fade" id="modalCreaTuviaje" tabindex="-1" aria-labelledby="modalCreaTuviajeLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <img src="/img/Nombre.png" width="80%" height="80%"><br>
+                      <h5 class="modal-title" id="modalCreaTuviajeLabel">Crea tu viaje</h5>
+                  </div>
+                  <div class="modal-body">
+                    
+                      <!-- Formulario de registro -->
+                    <form class="row g-3">
+                          <!-- Primera columna -->
+                          <div class="col-md-6">
+                              <!-- Campo ciudad de origen -->
+                              <div class="mb-2">
+                                  <label for="ciudadOrigen" class="form-label">Ciudad de origen </label>
+                                  <div class="input-group">
+                                      <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                                      <input type="text" class="form-control" id="ciudadOrigen">
+                                  </div>
+                                </div>
+                              <!-- Campo ciudad destino -->
+                              <div class="mb-2">
+                                  <label for="ciudadDestino" class="form-label">Ciudad de destino</label>
+                                  <div class="input-group">
+                                      <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                                      <input type="text" class="form-control" id="ciudadDestino">
+                                  </div>
+                            </div>
+                        </div>
+                            
+                          <!-- Segunda columna -->
+                    <div class="col-md-6">
+                          <!-- campo fecha de ida -->
+                          <div class="mb-3">
+                            <label for="fechaNacimiento" class="form-label">Fecha de ida</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                <input type="date" class="form-control" id="fechaIda">
+                            </div>
+                          </div>
+                        
+                              <!-- campo fecha de vuelta -->
+                              <div class="mb-3">
+                                <label for="fechaNacimiento" class="form-label">Fecha de vuelta</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                    <input type="date" class="form-control" id="fechaVuelta">
+                                </div>
+                              </div>
+                    </div>
+                            </form>
+                        
+                              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalCreaTuviaje">Enviar</button>
+                   </div>
+                         
+                
+                         
+                          
+        
+    </div>
+  </div>
 </body>
 </html>

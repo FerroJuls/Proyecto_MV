@@ -158,3 +158,35 @@ text-align: center;
 .centrarCuadroCheck{
     padding-left: 24%;
 }
+.highlight{
+    width: 90%;
+    height: 10%; 
+     margin-left: 50px;
+     background-color: #eaeaeac7;
+     margin-top: 7%;
+     border-radius: 20px;
+     
+    }
+    .highlight-title{
+        margin-left: 35%;
+        position:relative;
+        align-items: center;
+        padding-top: 5%;
+        font-family: sans-serif;
+        font-weight: 100%;
+        }
+        
+    .highlight-text{
+        font-weight: 20;
+        margin-top: 50px;
+        font-size: 95%;
+        text-align: justify;
+        margin: 30px;
+        }
+
+    .btn-secondary{
+        margin-left: 45%;   
+        margin-top: 21;
+    }
+    
+    
