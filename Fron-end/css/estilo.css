@@ -6,6 +6,12 @@ body {
     background-color: #F2F6F8;
 }
 
+.imgCarrusel{
+    filter: brightness(0.5);
+    width:100%; 
+    height:auto;
+}
+
 .link-body-emphasis:hover .link-text,
 .link-body-emphasis:hover i {
     transform: scale(1.4);
