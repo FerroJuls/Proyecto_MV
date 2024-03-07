@@ -139,8 +139,13 @@ ul {
     margin-top: 100px;
     margin-bottom: 30px;
 }
-img{
+
+img {
     border-radius: 5%;
+}
+
+div.ml-3>img {
+    margin-left: 80px;
 }
 
 
