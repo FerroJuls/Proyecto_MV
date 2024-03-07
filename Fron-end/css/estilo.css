@@ -179,13 +179,13 @@ body {
     height: 10%; 
      margin-left: 50px;
      background-color: #eaeaeac7;
-     margin-top: 4%;
+     margin: 4%;
      border-radius: 20px;
 
      
     }
     .highlight-title{
-        margin-left: 35%;
+        margin-left: 40%;
         position:relative;
         align-items: center;
         padding-top: 5%;
@@ -202,7 +202,7 @@ body {
         }
 
     .centrarCrear{
-        margin-left: 45%;   
+        margin-left: 49%;   
         margin-top: 1%;
         margin-bottom: 2%;
     }
