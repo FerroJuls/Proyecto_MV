@@ -171,6 +171,7 @@ body {
 }
 
 
+
 /* crea tu viaje  */
 
 .highlight{
@@ -200,7 +201,7 @@ body {
         margin: 30px;
         }
 
-    .btn-secondary{
+    .centrarCrear{
         margin-left: 45%;   
         margin-top: 1%;
         margin-bottom: 2%;
