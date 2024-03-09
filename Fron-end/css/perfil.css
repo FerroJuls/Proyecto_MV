@@ -1,13 +1,25 @@
 
 
-/* inicio estilos containerInformacionPersonal */
+/* inicio estilos InformacionPersonal */
 
 /* Estilos generales */
+
+.row {
+  display: flex;  /* Contenedor de fila usa flexbox */
+}
+.split-container{
+  flex: 1;  /* Ocupa el espacio restante */
+  display: grid;
+  grid-template-columns: 100% 100%;  /* Dos columnas iguales */
+  grid-gap: 40px;  /* Espacio opcional entre secciones */
+}
+
   .containerInformacion {
     margin-left: 10%;
     border: 1px solid #ccc;
     border-radius: 10%;
     width: 60%;
+    
   }
   
   /* Encabezado */
