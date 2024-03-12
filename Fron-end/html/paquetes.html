@@ -24,6 +24,25 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/Fron-end/css/paquetes.css" />
+    <style>
+      .filtro-lista {
+        border-radius: 10px;
+        width: 200px;
+        background-color: #babdbe;
+        padding: 20px;
+        border-right: 1px solid #dee2e6;
+        margin-right: 20px;
+      }
+      .tarjeta-paquete {
+        margin-bottom: 20px;
+      }
+      #mapa {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    </style>
   </head>
 
   <body>
@@ -89,225 +108,116 @@
         </nav>
       </div>
 
-      <br />
-      <br />
-
-      <!--filtros-->
-
-      <!--Cartas de paquetes de viajes-->
-      <div class="slide-container">
-        <div class="slide-content">
-          <div class="row centradoInfo-sm justify-content-between">
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>Piscilagos</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/Piscilago.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$190.000 X persona</p>
-              <p>Fecha:20 marzo 2024</p>
-              <p>Salida: Parque principal Teruel, Huila</p>
-              <p>3:30 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>Piscilagos</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/Piscilago.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$190.000 X persona</p>
-              <p>Fecha:20 marzo 2024</p>
-              <p>Salida: Parque principal Teruel, Huila</p>
-              <p>3:30 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
-
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>Cartagena</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/Cartagena.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$1'000.000 X persona</p>
-              <p>Fecha:28 abril 2024</p>
-              <p>Salida: Parque los Mártirez Neiva, Huila</p>
-              <p>4:30 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>San Andrés</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/sanAndres.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$190.000 X persona</p>
-              <p>Fecha:03 abril 2024</p>
-              <p>Salida: Coliseo cubierto neiva, Huila</p>
-              <p>4:00 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
-          </div>
+      <div class="row">
+        <div class="filtro-lista">
+          <!-- Filtro Lista -->
+          <h4>Lugares visitados</h4>
+          <ul>
+            <input type="checkbox" id="filtro1" name="filtro1" />
+            <label for="filtro1"> Piscilagos</label
+            ><br />
+            <input type="checkbox" id="filtro2" name="filtro2" />
+            <label for="filtro2">Cartagena</label
+            ><br />
+            <input type="checkbox" id="filtro3" name="filtro3" />
+            <label for="filtro3">San Andrés</label>
+            <!-- Agrega más filtros si es necesario -->
+          </ul>
         </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div class="slide-container">
-        <div class="slide-content">
-          <div class="row centradoInfo-sm justify-content-between">
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>Piscilagos</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/Piscilago.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$190.000 X persona</p>
-              <p>Fecha:20 marzo 2024</p>
-              <p>Salida: Parque principal Teruel, Huila</p>
-              <p>3:30 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>Piscilagos</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/Piscilago.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$190.000 X persona</p>
-              <p>Fecha:20 marzo 2024</p>
-              <p>Salida: Parque principal Teruel, Huila</p>
-              <p>3:30 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
 
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>Cartagena</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/Cartagena.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$1'000.000 X persona</p>
-              <p>Fecha:28 abril 2024</p>
-              <p>Salida: Parque los Mártirez Neiva, Huila</p>
-              <p>4:30 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
-            </div>
-            <div class="col-lg-3 fondoDatoTarjeta centrarTexto">
-              <h5 class="fw-normal alinearDato"><b>San Andrés</b></h5>
-              <img
-                src="/Fron-end/img/Paquetes/sanAndres.jpg"
-                width="100%"
-                height="170px"
-              />
-              <p>$190.000 X persona</p>
-              <p>Fecha:03 abril 2024</p>
-              <p>Salida: Coliseo cubierto neiva, Huila</p>
-              <p>4:00 am</p>
-              <p>INCLUYE:</p>
-              <ul>
-                <li>Desayuno, almuerzo y cena</li>
-                <li>Copa de helado</li>
-                <li>Asistencia medica dentro del parque</li>
-                <li>Seguro de viaje</li>
-                <li>Transporte en bus especial de turismo</li>
-                <li class="last-item">
-                  ingreso al parque con todas las atracciones acuaticas y
-                  mecanicas
-                </li>
-              </ul>
-              <button type="button" class="btn btn-secondary">Comprar</button>
+        <!--Cartas de paquetes de viajes-->
+        <div class="col">
+          <div class="slide-container">
+            <div class="slide-content">
+              <div class="row centradoInfo-sm justify-content-between">
+                <div
+                  class="col-lg-3 fondoDatoTarjeta centrarTexto tarjeta-paquete"
+                >
+                  <h5 class="fw-normal alinearDato"><b>Piscilagos</b></h5>
+                  <img
+                    src="/Fron-end/img/Paquetes/Piscilago.jpg"
+                    width="100%"
+                    height="170px"
+                  />
+                  <p>$190.000 X persona</p>
+                  <p>Fecha:20 marzo 2024</p>
+                  <p>Salida: Parque principal Teruel, Huila</p>
+                  <p>3:30 am</p>
+                  <p>INCLUYE:</p>
+                  <ul>
+                    <li>Desayuno, almuerzo y cena</li>
+                    <li>Copa de helado</li>
+                    <li>Asistencia medica dentro del parque</li>
+                    <li>Seguro de viaje</li>
+                    <li>Transporte en bus especial de turismo</li>
+                    <li class="last-item">
+                      ingreso al parque con todas las atracciones acuaticas y
+                      mecanicas
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-secondary">
+                    Comprar
+                  </button>
+                </div>
+                <div
+                  class="col-lg-3 fondoDatoTarjeta centrarTexto tarjeta-paquete"
+                >
+                  <h5 class="fw-normal alinearDato"><b>Cartagena</b></h5>
+                  <img
+                    src="/Fron-end/img/Paquetes/Cartagena.jpg"
+                    width="100%"
+                    height="170px"
+                  />
+                  <p>$1'000.000 X persona</p>
+                  <p>Fecha:28 abril 2024</p>
+                  <p>Salida: Parque los Mártirez Neiva, Huila</p>
+                  <p>4:30 am</p>
+                  <p>INCLUYE:</p>
+                  <ul>
+                    <li>Desayuno, almuerzo y cena</li>
+                    <li>Copa de helado</li>
+                    <li>Asistencia medica dentro del parque</li>
+                    <li>Seguro de viaje</li>
+                    <li>Transporte en bus especial de turismo</li>
+                    <li class="last-item">
+                      ingreso al parque con todas las atracciones acuaticas y
+                      mecanicas
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-secondary">
+                    Comprar
+                  </button>
+                </div>
+                <div
+                  class="col-lg-3 fondoDatoTarjeta centrarTexto tarjeta-paquete"
+                >
+                  <h5 class="fw-normal alinearDato"><b>San Andrés</b></h5>
+                  <img
+                    src="/Fron-end/img/Paquetes/sanAndres.jpg"
+                    width="100%"
+                    height="170px"
+                  />
+                  <p>$190.000 X persona</p>
+                  <p>Fecha:03 abril 2024</p>
+                  <p>Salida: Coliseo cubierto neiva, Huila</p>
+                  <p>4:00 am</p>
+                  <p>INCLUYE:</p>
+                  <ul>
+                    <li>Desayuno, almuerzo y cena</li>
+                    <li>Copa de helado</li>
+                    <li>Asistencia medica dentro del parque</li>
+                    <li>Seguro de viaje</li>
+                    <li>Transporte en bus especial de turismo</li>
+                    <li class="last-item">
+                      ingreso al parque con todas las atracciones acuaticas y
+                      mecanicas
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-secondary">
+                    Comprar
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -359,13 +269,18 @@
               dudas, reclamos, solicitudes e inquietudes
             </p>
             <p>mundoViajero2024gmail.com</p>
+            <div id="mapa"></div>
+
+            <!-- Enlace al mapa real -->
+            <a href="https://www.google.com.co/maps/place/Servicio+Nacional+de+Aprendizaje+SENA+Sede+Industria/@2.9623496,-75.2883684,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3b746668a5f7f7:0x3fcec03b9c2c0e85!8m2!3d2.9623442!4d-75.2857935!16s%2Fg%2F11by_l6c61?hl=es-419&entry=ttu" target="_blank">
+              <div style="width: 200px; text-align: center;"></div>
+            </a>
           </div>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
 
 <!-- <div class="container mb-3">
   <div class="row justify-content-center align-items-center">
