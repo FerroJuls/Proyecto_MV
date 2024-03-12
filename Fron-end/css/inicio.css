@@ -245,3 +245,15 @@ input:valid~label {
     flex-direction: row;
     justify-content: center;
 }
+
+.centradoTerminosCondiciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centradoTerminosCondiciones a {
+    color: white;
+    text-decoration: none; 
+}
+

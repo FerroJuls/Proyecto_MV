@@ -36,7 +36,7 @@
                             class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split fondoDato"
                             data-bs-toggle="dropdown" aria-expanded="false"></button>
                         <ul class="dropdown-menu body">
-                            <li><a class="dropdown-item  fondoDato" data-bs-toggle="modal" data-bs-target="#modalInicio">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item  fondoDato" href="/Fron-end/html/inicioSesión/iniciarSesión.html">Iniciar sesión</a></li>
                         </ul>
                     </div>
                 </div>
@@ -273,12 +273,6 @@
     </div>
 
 
-
-
-
-
-
-
     <!-- informacion empresa -->
 
     <footer class="footer bg-dark" style="height: 350px;" id="footer">
@@ -287,7 +281,7 @@
                 <div class="col-4">
                     <div class="ml-3">
                         <!-- Aquí va el logo -->
-                        <img src="/Fron-end/img/Empresa/MV.png" width="200" height="150">
+                        <img src="/Fron-end/img/Empresa/MV.png" width="150" height="150">
                     
                     </div>
                 </div>
@@ -307,238 +301,6 @@
             </div>
         </div>
     </footer>
-
-
-    <!-- Modal -->
-    <!-- Modal Inicio de sesion -->
-    <div class="modal fade" id="modalInicio" tabindex="-1" aria-labelledby="modalInicioLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img src="/Fron-end/img/Empresa/Nombre.png" width="80%" height="80%"><br>
-                    <h5 class="modal-title" id="modalInicioLabel">Inicio De Sesión</h5>
-                </div>
-                <div class="modal-body">
-                    <!-- Formulario de inicio de sesión -->
-                    <form>
-                        <!-- Campo de nombre de usuario -->
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                <input type="email" class="form-control" id="email">
-                            </div>
-                        </div>
-                        <!-- Campo de contraseña -->
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="password">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer ">
-                   
-                    
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
-
-                    <a class="nav-item nav-link link-body-emphasis" data-bs-toggle="modal"
-                        data-bs-target="#modalOlvidarContraseña">
-                        <h6>¿Has olvidado tu contraseña?</h6>
-                    </a>
-                    <a class="nav-item nav-link link-body-emphasis" data-bs-toggle="modal"
-                    data-bs-target="#modalRegistro">
-                        <h6>Registrarse</h6>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Olvidar Contraseña -->
-    <div class="modal fade" id="modalOlvidarContraseña" tabindex="-1" aria-labelledby="modalOlvidarContraseñaLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img src="/Fron-end/img/Empresa/Nombre.png" width="80%" height="80%"><br>
-                    <h5 class="modal-title" id="modalOlvidarContraseñaLabel">¿Has olvidado tu contraseña?</h5>
-                </div>
-                <div class="modal-body">
-                    <!-- Formulario de inicio de sesión -->
-                    <form>
-                        <!-- Campo de nombre de usuario -->
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Digita tu email</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                <input type="correo" class="form-control" id="correo">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer ">
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                        data-bs-target="#modalMensajeOlvidarContraseña">Enviar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Mensaje Olvidar Contraseña -->
-    <div class="modal fade" id="modalMensajeOlvidarContraseña" tabindex="-1"
-        aria-labelledby="modalMensajeOlvidarContraseñaLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img src="/Fron-end/img/Empresa/Nombre.png" width="80%" height="80%"><br>
-                    <h5 class="modal-title centrarTextoModal" id="modalMensajeOlvidarContraseñaLabel">En breve momento
-                        llegará un enlace de recuperación de contraseña a tu email</h5>
-                </div>
-                <div class="modal-footer ">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Modal Registro -->
-<div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <img src="/Fron-end/img/Empresa/Nombre.png" width="80%" height="80%"><br>
-                <h5 class="modal-title" id="modalRegistroLabel">Registrarse</h5>
-            </div>
-            <div class="modal-body">
-                
-                <!-- Formulario de registro -->
-                <form class="row g-3">
-                    <!-- Primera columna -->
-                    <div class="col-md-6">
-                        <!-- Campo de nombre -->
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" id="nombre">
-                            </div>
-                        </div>
-                        <!-- Campo de email -->
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                <input type="emaill" class="form-control" id="emaill">
-                            </div>
-                        </div>
-                        <!-- Campo de contraseña -->
-                        <div class="mb-3">
-                            <label for="contraseña" class="form-label">Contraseña</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="contraseña">
-                            </div>
-                        </div>
-                        <!-- Campo de tipo de documento -->
-                        <div class="mb-3">
-                            <label for="tipoDocumento" class="form-label">Tipo de documento</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-id-card"></i></span>
-                                <select class="form-select" id="tipoDocumento">
-                                    <option value="">Seleccionar</option>
-                                    <option value="cc">Cédula de ciudadanía</option>
-                                    <option value="ti">Tarjeta de identidad</option>
-                                    <!-- Otros tipos de documento -->
-                                </select>
-                            </div>
-                        </div>
-                        <!-- Campo de género -->
-                        <div class="mb-3">
-                            <label for="genero" class="form-label">Género</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-venus-mars"></i></span>
-                                <select class="form-select" id="genero">
-                                    <option value="">Seleccionar</option>
-                                    <option value="masculino">Masculino</option>
-                                    <option value="femenino">Femenino</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Segunda columna -->
-                    <div class="col-md-6">
-                        <!-- Campo de apellidos -->
-                        <div class="mb-3">
-                            <label for="apellidos" class="form-label">Apellidos</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" id="apellidos">
-                            </div>
-                        </div>
-                        <!-- Campo de teléfono -->
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                                <input type="tel" class="form-control" id="telefono">
-                            </div>
-                        </div>
-                        <!-- Campo de confirmar contraseña -->
-                        <div class="mb-3">
-                            <label for="confirmarContraseña" class="form-label">Confirmar Contraseña</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" class="form-control" id="confirmarContraseña">
-                            </div>
-                        </div>
-                        <!-- Campo de número de documento -->
-                        <div class="mb-3">
-                            <label for="numeroDocumento" class="form-label">Número de documento</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-id-card"></i></span>
-                                <input type="text" class="form-control" id="numeroDocumento">
-                            </div>
-                        </div>
-                        <!-- Campo de fecha de nacimiento -->
-                        <div class="mb-3">
-                            <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                <input type="date" class="form-control" id="fechaNacimiento">
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <!-- Campo de términos y condiciones -->
-                    <div class="centrarCuadroCheck">
-                        <input type="checkbox" class="form-check-input" id="terminosCondiciones">
-                        <label class="form-check-label" for="terminosCondiciones"><a href="/Fron-end/documentos_MV/Términos y Condiciones MV.docx" download class="text-dark">Acepto los Términos y Condiciones</a></label>
-                    </div>
-                    
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Registrar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
 
 </body>
 
