@@ -1,14 +1,15 @@
 body {
     background-color: #eeeeee;
 }
+
 .body {
     background-color: #F2F6F8;
 }
 
-.imgCarrusel{
+.imgCarrusel {
     filter: brightness(0.5);
-    width:100%; 
-    height:auto;
+    width: 100%;
+    height: auto;
 }
 
 .link-body-emphasis:hover .link-text,
@@ -95,7 +96,7 @@ body {
 }
 
 .social-icon:hover {
-    color: #000000;
+    color: #ffffff;
     /* width: 200px;
     height: 200px; */
 }
@@ -142,8 +143,7 @@ body {
 
 
 
-/* Modals Inicio de sesion */
-/* Cambiar el color de fondo del modal */
+/* Modals */
 .modal-content {
     background-color: #DBD7D7;
 }
@@ -173,38 +173,74 @@ body {
 
 /* crea tu viaje  */
 
-.highlight{
+.highlight {
     width: 90%;
-    height: 10%; 
-     margin-left: 50px;
-     background-color: #ffffffc7;
-     margin: 4%;
-     border-radius: 20px;
+    height: 10%;
+    margin-left: 50px;
+    background-color: #ffffffc7;
+    margin: 4%;
+    border-radius: 20px;
 
-     
-    }
-    .highlight-title{
-        text-align: center;
-        position:relative;
-        align-items: center;
-        padding-top: 5%;
-        font-family: sans-serif;
-        font-weight: 100%;
-        }
-        
-    .highlight-text{
-        font-weight: 20%;
-        margin-top: 20%;
-        font-size: 95%;
-        text-align: justify;
-        margin: 30px;
-        }
 
-    .centrarCrear{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2%;
-    }
-    
-    
-    
+}
+
+.highlight-title {
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding-top: 5%;
+    font-family: sans-serif;
+    font-weight: 100%;
+}
+
+.highlight-text {
+    font-weight: 20%;
+    margin-top: 20%;
+    font-size: 95%;
+    text-align: justify;
+    margin: 30px;
+}
+
+.centrarCrear {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social_icon {
+    list-style: none;
+    padding: 0;
+}
+
+.social_icon li {
+    display: inline-block;
+    margin-right: 2%; 
+}
+
+.social_icon li:last-child {
+    margin-right: 0; 
+}
+
+.social-icon {
+    font-size: 32px; 
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+p {
+    margin: 0 10px 0 10px; 
+}
