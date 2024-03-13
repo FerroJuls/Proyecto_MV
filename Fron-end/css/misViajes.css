@@ -5,11 +5,17 @@
     height: 95%;
     width: auto;
     margin-top: 15%;
-    margin-inline-end: 15%;
+    margin-inline-end: 25%;
 }
 .img{
     height: 180%;
     width: 200%;
 }
-/* estilos modal */
+/* estilos */
+footer {
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fdf7f7;
+  }
+ 
  

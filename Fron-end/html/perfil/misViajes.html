@@ -65,6 +65,7 @@
                                 <h5 class="card-title mb-0">Cartagena</h5>
                                 <br>
                                 <img class="img-fluid w-100" src="/Fron-end/img/Paquetes/Cartagena.jpg" alt="">
+                              
                                 <div class="text-muted">10 de Enero de 2023</div>
                                 <div class="text-warning">Calificación: 
                                     <i class="fas fa-star"></i>
@@ -73,14 +74,18 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                               <!-- modal comentario  -->
-
-                              
-                            </div>
-                        </div>
+                                <br>
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        commentario
+                                    </button>
+                                </div>
+                            </div>     
+                        </div>    
                     </div>
-                </div>
-
+                </div>           
+                                
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card mb-3 targeta">
                         <div class="card-body d-flex justify-content-center align-items-center">
@@ -96,6 +101,11 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
+                                <br>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    commentario
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -116,7 +126,42 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
+                                <br>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    commentario
+                                </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal comentarios -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">COMENTARIOS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- <div class="col-md-12">
+                                    <label for="txtcomentario" class="form-label">escribe aqui tu Comentario</label>
+                                    <input type="text" name="txtcomentario" class="form-control" id="txtcomentario">
+                                </div> -->
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="txtcomentario"  name="txtcomentario" style="height: 140px"></textarea>
+                                    <label for="txtcomentario">escribe aqui tu Comentario</label>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer button ">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                            <button type="button" class="btn btn-primary">abrir</button>
+                            </div> -->
+                            <footer>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                            </footer>
                         </div>
                     </div>
                 </div>
