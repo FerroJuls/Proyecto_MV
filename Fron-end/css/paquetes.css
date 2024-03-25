@@ -86,7 +86,7 @@ body {
 }
 
 .social-icon:hover {
-    color: #000000;
+    color: #ffffff;
     /* width: 200px;
     height: 200px; */
 }
@@ -131,7 +131,7 @@ body {
     margin: auto;
 }
 
-ul {
+.paquetesTarjetas {
     text-align: left;
 }
 
@@ -177,3 +177,110 @@ div.ml-3>img {
 .centrarCuadroCheck {
     padding-left: 24%;
 }
+
+.tarjeta-paquete {
+    margin-bottom: 2%;
+}
+
+.filtroCheck{
+        padding-left: 0.5rem;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social_icon {
+    list-style: none;
+    padding: 0;
+}
+
+.social_icon li {
+    display: inline-block;
+    margin-right: 2%; 
+}
+
+.social_icon li:last-child {
+    margin-right: 0; 
+}
+
+.social-icon {
+    font-size: 32px; 
+    color: #fff; /* Color blanco */
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+p {
+    margin: 0 10px 0 10px; 
+}
+
+.centrado{
+    text-align: center;
+}
+
+/* filter */
+
+/* Estilos generales */
+.row {
+    display: flex;
+  }
+  
+  .filtro-lista {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 0 0 auto; /* Evita que se expanda */
+  }
+  
+  .filtro-group {
+    margin-bottom: 20px;
+  }
+  
+  .filtro-group h6 {
+    margin-top: 0;
+  }
+  
+  .filtroCheck {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filtroCheck li {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los checkboxes */
+  .filtroCheck input[type="checkbox"] {
+    display: none;
+  }
+  
+  .filtroCheck label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1% 10%;
+    border-radius: 5px;
+    background-color: #ddd;
+  }
+  
+  .filtroCheck input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .filtro-lista {
+    border-radius: 10px;
+    width: 200px;
+    background-color: #babdbe;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+    margin-right: 20px;
+  }  
